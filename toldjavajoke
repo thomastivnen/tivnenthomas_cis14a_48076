@@ -1,0 +1,43 @@
+<!doctype html>
+
+ <html lang="en">
+ 
+ <head>   
+ 
+<meta charset="utf-8">
+ 
+   <title>Tivnen_JavaJoke_A01</title>
+
+</head> 
+
+ <body> 
+
+<h1>This is script for JavaJoke ---------"And did a couple lines of code"</h1>  
+  
+<script>
+
+
+
+
+// Test for jokes 
+
+var joke = "JavaScript walked into a bar...."; 
+
+var toldJoke = "false"; 
+
+var $punchline = "Better watch out for those semi-colons."; 
+
+var entage = 20; 
+
+var result;
+
+if (toldJoke == true) {    Alert($punchline);  } 
+
+else     { alert(joke); }
+
+</script>
+
+</body>
+
+</html>
+

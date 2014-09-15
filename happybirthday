@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Tivnen_Thomas_Assignment1_cis14A</title>
+
+</head>
+
+<body>
+
+<script>
+
+var name = "Joe";
+
+var i = 0; 
+
+while (i < 2) {    document.write("Happy Birthday to you.<br>");    
+
+i = i + 1; }
+
+document.write("Happy Birthday to you.<br>"); 
+
+document.write("Happy Birthday dear " + name + ",<br>");
+
+</script>
+
+
+
+</body>
+
+</html>
