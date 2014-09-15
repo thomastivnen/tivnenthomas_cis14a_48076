@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ind If PayCheck</title>
+</head>
+
+<body>
+<script type="text/javascript">
+//Paycheck program 
+
+//variable names and their values
+var hours = parseInt(Math.random()*20+40);
+var payRate = 10;
+var ovt = 40;
+var ovtRate = 15;
+var payCheck;
+
+//paycheck output formula
+document.write("<h1>Hours worked  = "+hours+" hrs</h1>");
+document.write("<h1>Pay rate    =   $"+payRate+"  </h1>");
+document.write("<h1>Over time start  =  "+ovt+" hrs</h1>");
+
+
+//paycheck calculation formula for payout
+if(hours<=ovt)payCheck = hours * payRate;
+if(hours>ovt)payCheck = (ovt * payRate) + ((hours-ovt) * ovtRate); 
+payCheck=payCheck.toFixed(2);
+
+//output
+document.write("<h1>My paycheck = $"+payCheck+" </h1>");
+</script>
+
+</body>
+</html>
