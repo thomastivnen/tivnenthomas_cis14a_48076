@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<title>2dimensional array</title>
+
+
+  
+  </head>
+  <body>
+
+<script type="text/javascript">
+  function multidimensionalArray(table) {
+  document.write("<b>Example to show MultiDimensional Array</b>"+"<br>");
+  document.write("<table border=1>"); 
+  document.write("<th>S.no</th><th>Name</th><th>Ph.No</th>\n\<th>Company</th>");
+  for(var x=1; x<=3; x++) {
+  document.write("<tr><td>",x,"</td>");
+  for(var y=0; y<=2; y++){
+  document.write("<td>",table[x][y],"</td>");
+  }
+  document.write("</tr>");
+  }
+  document.write("</table>");
+  }
+  var array1 = new Array("Girish","971999","Roseindia.net");
+  var  array2 = new Array("Mahendra","971988","Roseindia.net");
+  var  array3 = new Array("Komal","971977","Roseindia.net");
+  var newarray = new Array("",array1,array2,array3);
+
+  multidimensionalArray(newarray);
+  </script>
+
+ </body>
+</html> 
