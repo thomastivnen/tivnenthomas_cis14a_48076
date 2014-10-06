@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>paycheck basic table without an array</title>
+</head>
+
+<body>
+
+<script type="text/javascript">
+//Written by Thomas Tivnen for Cis14a 48076 Javascript, instrructor: Mark Lehr
+
+//Paycheck program 
+
+//variable names and their values
+var hours = parseInt(Math.random()*20+52);
+var payRate = 10;
+var ovt = 20;
+var ovtRate = 15;
+var doublTime = 20;
+var doublRate = 20;
+var triplTime = 40;
+var triplRate = 30;
+var payCheck;
+var grossPay = 0;
+var tax ;
+var net;
+
+//paycheck output formula
+
+//paycheck calculation formula for  pay check, gross payout 
+if(hours<=ovt)payCheck = hours * payRate;
+if(hours>triplTime)payCheck = (ovt * payRate) + (20 * ovtRate) + (10 * doublRate) + ((hours-triplTime) * triplRate);
+if(hours>doublTime)payCheck = (ovt * payRate) + (20 * ovtRate) + ((hours-doublTime) * doublRate);
+else payCheck = (ovt * payRate) + ((hours-ovt) * ovtRate); 
+if(grossPay=0)grossPay=(payCheck + grossPay);// gross pay
+else grossPay=(payCheck + grossPay);
+grossPay=grossPay.toFixed(2);// outputting grossPay to a yearly ballence accumulation before taxes
+tax = (payCheck * 10/100);//compute taxes
+tax=tax.toFixed(2);// output taxes
+net = (payCheck - tax);// compute the net total for payCheck
+net=net.toFixed(2);// output net total for payCheck
+
+
+payCheck=payCheck.toFixed(2); //output payCheck total
+
+
+
+//output table
+
+document.write("<h1>Paycheck Table Without an Array</h1>");// output heading for page
+
+document.write('<table width="auto" height="auto" border="2">');// output table specs
+document.write("<tr>");
+
+
+document.write("<td>Hours worked  = "+hours+" hrs</td>");// output hours
+
+document.write("<td>Gross Pay    =   $"+grossPay+"  </td>") ;// output Gross pay
+
+document.write("<td>Pay rate    =   $"+payRate+",Double Time   =   $"+doublRate+",Triple time  =  $"+triplRate+"</td>");// output hourly pay rate
+
+document.write("<td>Tax = $"+tax+"</td>");// output tax
+
+document.write("<td>Net = $"+net+"</td>");// output net
+
+document.write("<td>My paycheck = $"+net+" </td>");// output pay check
+
+document.write("</tr>");
+
+document.write("</table>");
+</script>
+</body>
+</html>
