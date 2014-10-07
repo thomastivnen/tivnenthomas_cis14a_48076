@@ -18,14 +18,14 @@
 	var intEarned=principle*intRate;
 	//Put the display with the calculations
 	document.write("<h1>Savings Table</h1>");
-	document.write(year.toFixed(2)+" ");
+	document.write(year.toFixed(0)+" ");
 	document.write(balance.toFixed(2)+" ");
 	document.write(intEarned.toFixed(2));
 	document.write("</br>");
 	for(var years=1;years<=nYears;years++){
 		balance=balance+intEarned;
 		intEarned=balance*intRate;
-		document.write(years.toFixed(2)+" ");
+		document.write(years.toFixed(0)+" ");
 		document.write(balance.toFixed(2)+" ");
 		document.write(intEarned.toFixed(2));
 		document.write("</br>");

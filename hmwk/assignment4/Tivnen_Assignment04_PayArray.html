@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>pay check array</title>
+
+</head>
+
+<body>
+
+<script>
+document.write('<h1>Pay Check Array</h1>');
+// written by Thomas Tivnen for Cis14a 48076 Javascript
+// Instructor: Mark Lehr
+//variable names and their values
+var hours = parseInt(Math.random()*20+52);// random hours upto 72 max
+var payRate = 10;
+var ovt = 20;
+var ovtRate = 15;
+var doublTime = 20;
+var doublRate = 20;
+var triplTime = 40;
+var triplRate = 30;
+var payCheck;
+var grossPay = 0;
+var tax ;
+var net;
+
+// set up array
+a= new Array(  "hours", "grossPay", "Pay Rate $10, Double Time $20, Triple Time $30,", "tax", "net", "net" );
+
+//paycheck calculation formula for  pay check, gross payout, tax , net, gross year ballance 
+if(hours<=ovt)payCheck = hours * payRate;
+if(hours>triplTime)payCheck = (ovt * payRate) + (20 * ovtRate) + (10 * doublRate) + ((hours-triplTime) * triplRate);
+if(hours>doublTime)payCheck = (ovt * payRate) + (20 * ovtRate) + ((hours-doublTime) * doublRate);
+else payCheck = (ovt * payRate) + ((hours-ovt) * ovtRate); 
+if(grossPay=0)grossPay=(payCheck + grossPay);// gross pay
+else grossPay=(payCheck + grossPay);
+grossPay=grossPay.toFixed(2);// outputting grossPay to a yearly ballence accumulation before taxes
+tax = (payCheck * 10/100);//compute taxes
+tax=tax.toFixed(2);// output taxes
+net = (payCheck - tax);// compute the net total for payCheck
+net=net.toFixed(2);// output net total for payCheck
+
+
+payCheck=payCheck.toFixed(2); //output payCheck total
+
+// populate table 
+a[0]=hours;
+hours = parseInt(Math.random()*20+52);
+a[1]=grossPay;
+a[3]=tax;
+a[4]=net;
+a[5]=net;
+
+// output arrays
+document.write ( "Hours Worked  ", a[0] , " Gross Pay $" , a[1] , " " , a[2] , " Tax $" , a[3] , " Net $" , a[4] , " Pay Check $" , a[5] , " ");
+
+</script>
+</body>
+</html>
