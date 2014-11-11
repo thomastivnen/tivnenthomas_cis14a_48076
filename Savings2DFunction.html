@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>adding function to array</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script>
+                //   written by Thomas Tivnen CIS 14a Javascript 
+            function createArray(y){
+                var array=[];
+                for(var year=0;year<=y;year++){
+                    array[year]=[];
+                }
+                return array;
+            }
+            function fillArray(a,ib,ie){
+                 //Initialize the 2 Dimensional Array
+                for(var year=0;year<a.length;year++){
+                    for(var col=0;col<=(ie-ib);col++){
+                        a[year][col]=Math.pow((1+(ib+col)/100),year);
+                    }
+                }
+            }
+            function displayString(a){
+                //Display the 2 Dimensional Array
+                var str="<table>";
+                for(var year=0;year<a.length;year++){
+                    str+="<tr>";
+                    str+="<td>"+year+"</td>";
+                    for(var col=0;col<a[0].length;col++){
+                        str+="<td>"+a[year][col].toFixed(2)+"</td>";
+                    }
+                    str+="</tr>";
+                }
+                str+="</table>";
+                return str;
+            }
+        </script>   
+    </head>
+    <body>
+        <script>
+            //Declare the Savings table inputs
+            var years=50;//Number of Compounding periods
+            var intBeg=5;//Beginning interest rate
+            var intEnd=10;//Ending interest rate
+            //Declare a 2 Dimensional Array
+            var array=createArray(years);
+            //Initialize the 2 Dimensional Array
+            fillArray(array,intBeg,intEnd);
+            //Display the 2 Dimensional Array
+            var str=displayString(array);
+            document.write(str);
+        </script>
+    </body>
+</html>

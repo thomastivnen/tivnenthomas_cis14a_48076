@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2d array mult. table 0-6,0-9</title>
+<!--
+Written by Thomas Tivnen
+cis14a Javascript date 09.10.14
+-->
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <script>
+            //Declare the number of rows and cols
+            var rows=5;
+            var cols=10;
+            //Declare a 2 Dimensional Array
+            var array=[];
+            for(var row=0;row<rows;row++){
+                array[row]=[];
+            }
+            //Initialize the 2 Dimensional Array
+            for(var row=0;row<rows;row++){
+                for(var col=0;col<cols;col++){
+                    array[row][col]=row*col;
+                }
+            }
+            //Display the 2 Dimensional Array
+            var str="<table>";
+            for(var row=0;row<rows;row++){
+                str+="<tr>";
+                for(var col=0;col<cols;col++){
+                    str+="<td>"+array[row][col]+"</td>";
+                }
+                str+="</tr>";
+            }
+            str+="</table>";
+            document.write(str);
+        </script>
+    </body>
+</html>
