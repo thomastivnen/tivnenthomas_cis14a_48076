@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>test.1</title>
+
+</head>
+
+<body>
+
+<div style="width: 210px; height: 158px;">
+
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer', {
+      height: '158',
+      width: '210',
+      videoId: JCLNbW_KPM?
+    });
+  }
+</script>
+
+
+<iframe width="210" height="158" src="http://www.youtube.com/embed/_JCLNbW_KPM" allowfullscreen>
+</iframe>
+
+
+</div>
+</body>
+</html>

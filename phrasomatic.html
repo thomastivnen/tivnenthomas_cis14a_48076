@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<!--   author Thomas Tivnen   CIS 14a Javascript   -->
+<title>Phrase0matic</title>
+</head>
+
+<body>
+
+ <script>   
+// fuction for writting quick snips or phrases 
+function makePhrases() {      
+var words1 = ["24/7", "multi-tier", "30,000 foot", "B-to-B", "win-win"]; //array of random snippets     
+var words2 = ["empowered", "value-added", "oriented", "focused", "aligned"];   // more random snippets or phrase fragments   
+var words3 = ["process", "solution", "tipping-point", "strategy", "vision"];  //last random fragments for the phraseomatic     
+var rand1 = Math.floor(Math.random() * words1.length);      
+var rand2 = Math.floor(Math.random() * words2.length);      
+var rand3 = Math.floor(Math.random() * words3.length);      
+var phrase = words1[rand1] + " " + words2[rand2] + " " + words3[rand3];      
+alert(phrase);    }    
+makePhrases(); 
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
