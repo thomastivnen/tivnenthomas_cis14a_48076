@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<!--   author Thomas Tivnen   CIS 14a Javascript   -->
+<title>bubbles array</title>
+</head>
+
+<body>
+<h1>The Bubble array for Bubble Solutions</h1>
+<script> // set variable for the array
+var scores = [60, 50, 60, 58, 54, 54,58, 50, 52, 54, 48, 69, 34, 55, 51, 52, 44, 51, 69, 64, 66, 55, 52, 61, 46, 31, 57, 52, 44, 18, 41, 53, 55, 61, 51, 44];
+
+ // setting solution values
+var solution0 = scores[0]; 
+var solution1 = scores[1];
+var solution2 = scores[2]; 
+var solution3 = scores[3];
+var solution4 = scores[4];
+var solution5 = scores[5];
+var solution6 = scores[6];
+var solution7 = scores[7];
+var solution8 = scores[8];
+var solution9 = scores[9];
+var solution10 = scores[10];
+var solution11 = scores[11];
+var solution12 = scores[12];
+var solution13 = scores[13];
+var solution14 = scores[14];
+var solution15 = scores[15];
+var solution16 = scores[16];
+var solution17 = scores[17];
+var solution18 = scores[18];
+var solution19 = scores[19];
+var solution20 = scores[20];
+var solution21 = scores[21];
+var solution22 = scores[22];
+var solution23 = scores[23];
+var solution24 = scores[24];
+var solution25 = scores[25];
+var solution26 = scores[26];
+var solution27 = scores[27];
+var solution28 = scores[28];
+var solution29 = scores[29];
+var solution30 = scores[30];
+var solution31 = scores[31];
+var solution32 = scores[32];
+var solution33 = scores[33];
+var solution34 = scores[34];
+var solution35 = scores[35];
+var highScore = 0; 
+var output; 
+for (var i = 0; i < scores.length; i++) {    
+output = "Bubble solution #" + i + " score: " + scores[i];    
+console.log(output);   
+
+if (scores[i] > highScore)  {  
+highScore = scores[i];    }
+ } 
+console.log("Bubbles tests: " + i); 
+console.log("Highest bubble score: " + highScore);
+
+var bestSolutions = []; 
+for (var i = 0; i < scores.length; i++)   {
+if (scores[i] == highScore)   {        
+bestSolutions.push(i);
+}
+}
+console.log(bestSolutions);
+// outputting the array information to print-display
+document.write("Bubble Solution 0 produced " + solution0 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 1 produced " + solution1 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 2 produced " + solution2 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 3 produced " + solution3 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 4 produced " + solution4 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 5 produced " + solution5 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 6 produced " + solution6 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 7 produced " + solution7 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 8 produced " + solution8 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 9 produced " + solution9 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 10 produced " + solution10 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 11 produced " + solution11 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 12 produced " + solution12 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 13 produced " + solution13 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 14 produced " + solution14 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 15 produced " + solution15 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 16 produced " + solution16 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 17 produced " + solution17 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 18 produced " + solution18 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 19 produced " + solution19 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 20 produced " + solution20 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 21 produced " + solution21 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 22 produced " + solution22 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 23 produced " + solution23 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 24 produced " + solution24 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 25 produced " + solution25 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 26 produced " + solution26 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 27 produced " + solution27 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 28 produced " + solution28 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 29 produced " + solution29 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 30 produced " + solution30 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 31 produced " + solution31 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 32 produced " + solution32 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 33 produced " + solution33 + " bubbles."); document.write('<br />');
+document.write("Bubble Solution 34 produced " + solution34 + " bubbles."); document.write('<br />');
+
+document.write("Bubble Solution 35 produced " + solution35 + " bubbles."); document.write('<br />');
+document.write("Bubble Tests = " + i ); document.write('<br />');
+document.write("Highest bubble score: " + highScore); document.write('<br />');
+document.write('The bubble solutions with the highest bubble count: ' + bestSolutions);
+
+</script>
+</body>
+</html>
