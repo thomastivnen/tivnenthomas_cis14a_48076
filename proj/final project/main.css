@@ -1,0 +1,38 @@
+/*     created by Thomas Tivnen for cis14a      */
+
+body     {     background-color: #2E8B57;
+                     border:  10px: solid #000;
+}
+
+#formmessage   {
+                                                background-color: #fff;          
+                                      }
+
+
+#pagewrap     {    width: 1050px;
+                 margin: auto; 
+                 position: relative;
+                 padding: 10px;  
+             }
+.productvideo    {
+                                           width: 200px; 
+                                            height: 150px; 
+                                            position: absolute; 
+                                             top: 14px; 
+                                              right: 400px;
+                                        }
+.contactusvideo   {
+                                               width: 255px; 
+                                                height: 177px; 
+                                                position: absolute; 
+                                                top: 18px; 
+                                                right: 274px;"
+                                           }
+#back2   {
+                              border: 1px solid #0000ff; 
+                              margin-top: 20px;
+                     }
+#back3   {
+                              border: 1px solid #0000ff; 
+                              margin-top: 20px;
+                     }

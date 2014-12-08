@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<!--   author Thomas Tivnen   CIS 14a Javascript   -->
+<title>email cookies</title>
+<link rel="stylesheet" type="text/css" href="main.css"/>
+</head>
+<body id="fommessage" style="background-color: #fff;">
+<form name="testform">
+<script src="javascript/emailcookie.js"></script>
+<HR>
+<p>Enter your E-mail here : <input type="text" name="username" required placeholder="Your E-mail" onBlur="MM_popupMsg('You must enter your  E-mail!')" size="25" /></p>
+<BR>
+<input type="button" value="Set my Name" onClick="SetCookie('username',
+document.testform.username.value)" />
+<BR>
+<input type="button" value="Get my Name" onClick="alert(GetCookieValue('username'))" />
+<HR>
+<h1>Enter Your Email Address To Receive Our Monthly Newsletter!</h1>
+<p><a href="home.html"><img id="back3" src="images/back2.gif" width="100" height="25" alt="back to lisa's link button" /></a></p>
+<img style="margin-left: 25px;" src="images/lisamag.gif" width="400" height="550" alt="image of Lisa's Guitar Magazine.">
+
+<script>
+function ValidateForm(testform){ 
+    ErrorText= ""; 
+    if (testform.username.value == "") {ErrorText= "\nPlease enter your name"} 
+
+    if ((testform.email.value == "" || testform.email.value.indexOf('@', 0) == -1) || testform.email.value.indexOf('.') == -1){ 
+        ErrorText+=     "\nPlease enter a proper value for your email"} 
+        if (testform.feedback.value == "") {ErrorText+= "\nPlease enter your feedback"} 
+        if (ErrorText!= "") { 
+        alert("Error :" + ErrorText); 
+        return false; 
+     } 
+       if (ErrorText= "") { testform.setcookie() } 
+} 
+</script>
+
+
+</form> 
+</body>
+</html>
