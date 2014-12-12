@@ -1,11 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<script type="text/javascript">
 document.write("<h1>Multiplication Table in 2 Dimensional Array<h1>");
 
  // Thomas Tivnen Cis 14a javascript 48076
+//  testing for 2 dim array shoppingcart
 
 
 var table2X2 = new Array(12);
@@ -50,19 +46,3 @@ function ShowArray() {
 	retString += "</Table>";
 	return retString;
 } // end function
-</Script>
- <TITLE>A Web page Time Table</TITLE>
-</HEAD>
-<BODY>
-<script type="text/javascript">
-// out put to array	
-	Initialize();
-	document.write(ShowArray());
-	</Script>
-</BODY>
-</HTML>
-
-
-
-
-
